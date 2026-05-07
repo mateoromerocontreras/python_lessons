@@ -5,22 +5,35 @@ I do: simple class, object, attributes, and methods.
 
 # I do:
 class Student:
-    def __init__(self, name, age):
+    def __init__(self, name, age, gender):
         self.name = name
         self.age = age
+        self.gender = gender
 
     def introduce(self):
-        print(f"Hi, I'm {self.name} and I am {self.age} years old.")
+        print(f"Hi, I'm {self.name} and I am {self.age} years old. I am {self.gender}.")
+        print("Nice to meet you!")
+
+    def estudiar(self):
+        print("estoy estudiando...")
+
+    def dormir(self):
+        print("estoy durmiendo...")
 
 
-student1 = Student("Ana", 20)
-student2 = Student("Luis", 22)
+student1 = Student("Ana", 20, "female")
+student2 = Student("Luis", 22, "male")
 
 print("--- Students ---")
 print(student1.name)
+print(student1.gender)
+genero = student1.gender
 print(student2.name)
 student1.introduce()
 student2.introduce()
+
+student1.estudiar()
+student1.estudiar()
 
 """
 We do: a more complete example using a Car class.

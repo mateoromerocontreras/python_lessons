@@ -8,6 +8,20 @@ Instructions:
 - You can run this file after completing each exercise.
 """
 
+"""
+• Calling a class object like a function makes a new instance object. Each time a
+class is called, it creates and returns a new instance object. Instances represent
+concrete items in your program’s domain.
+• Each instance object inherits class attributes and gets its own namespace.
+Instance objects created from classes are new namespaces; they start out empty
+but inherit attributes that live in the class objects from which they were gener-
+ated.
+• Assignments to attributes of self in methods make per‐instance attributes.
+Inside a class’s method functions, the first argument (called self by convention)
+references the instance object being processed; assignments to attributes of self
+create or change data in the instance, not the class.
+"""
+
 # Exercise 1:
 # Create a class named Book with the following attributes:
 # - title
