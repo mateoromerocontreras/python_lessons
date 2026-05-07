@@ -32,6 +32,27 @@ create or change data in the instance, not the class.
 # "Title: ... | Author: ... | Pages: ..."
 #
 # Then create at least two Book objects and call describe() on them.
+class Book:
+    """Atributos"""
+    def __init__(self, title, author, pages): # parametros de la funcion
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def describe(self):
+        print(f"Title: {self.title}  Author: {self.author}  Pages: {self.pages}")
+        #print("Title : " + self.title + " Author: " + self.author + " Pages: " + str(self.pages))
+
+    def read(self):
+        print(f"Reading {self.title} by {self.author}...")
+
+libroUno = Book("Harry Potter", "j.k. Rowling", 500)
+libroUno.read()
+
+libroDos = Book("Lord of the rings", "J.R.R. Tolkien", 1000)
+libroDos.describe()
+
+
 
 
 # Exercise 2:

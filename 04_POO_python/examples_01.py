@@ -5,11 +5,13 @@ I do: simple class, object, attributes, and methods.
 
 # I do:
 class Student:
+    """Atributos"""
     def __init__(self, name, age, gender):
         self.name = name
         self.age = age
         self.gender = gender
 
+    """Comportamientos (métodos) /funciones"""
     def introduce(self):
         print(f"Hi, I'm {self.name} and I am {self.age} years old. I am {self.gender}.")
         print("Nice to meet you!")
@@ -41,11 +43,13 @@ This example shows how methods can change object attributes.
 """
 
 class Car:
+    """Atributos"""
     def __init__(self, brand, model, fuel_level):
         self.brand = brand
         self.model = model
         self.fuel_level = fuel_level
 
+    """Comportamientos (métodos) /funciones"""
     def drive(self):
         if self.fuel_level > 0:
             print(f"The {self.brand} {self.model} is driving.")
@@ -72,10 +76,12 @@ This reinforces the idea of data + behavior together.
 """
 
 class BankAccount:
+    """Atributos"""
     def __init__(self, owner, balance=0):
         self.owner = owner
         self.balance = balance
 
+    """Comportamientos (métodos) /funciones"""
     def deposit(self, amount):
         self.balance += amount
         print(f"{self.owner} deposited {amount}. Balance: {self.balance}")
